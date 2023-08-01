@@ -1,12 +1,13 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { ArtRoom } from "~/components/router-head/art-room/artRoom";
+
 
 export default component$(() => {
   return (
     <>
-    <div class="h-screen w-screen flex flex-col justify-center items-center bg-purple-400">
-      <h1 class="text-5xl font-black">3D Showcase</h1>
-    </div>
+      <h1 class="text-5xl font-black p-12">3D Showcase</h1>
+      <ArtRoom />
     </>
   );
 });
